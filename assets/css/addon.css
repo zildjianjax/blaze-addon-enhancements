@@ -6,6 +6,7 @@ form.cart .addon-preferred-styling .product-addon {
   display: flex !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  flex-wrap: wrap;
 }
 form.cart .addon-preferred-styling h3.addon-name {
   display: none !important;
@@ -16,7 +17,6 @@ form.cart .addon-preferred-styling h3.addon-name {
     align-items: center;
     margin-right: 10px !important;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .product-addon-gift-styling .form-row {
   width: 154px;
@@ -30,26 +30,20 @@ form.cart .addon-preferred-styling h3.addon-name {
 .product-addon-gift-styling label .addon-img:before {
   background: url(/wp-content/uploads/2020/01/original.jpg);
     content: '';
-    width: 120px;
+    width: 100px;
     height: 100px;
     background-size: contain !important;
     margin-bottom: 10px;
     margin-left: 15px;
     display: block;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
 }
-.product-addon-gift-styling .form-row:nth-child(2) {
-  width: 135px !important;
-}
-/* Hide valentines styling temporarily */
 .product-addon-gift-styling .form-row:nth-of-type(2) {
   display: none;
 }
 /* Hide easter styling temporarily */
 .product-addon-gift-styling .form-row:nth-of-type(3) {
-  display: none;
-}
+    display: none;
+  }
 .product-addon-gift-styling .form-row:nth-of-type(2) label .addon-img:before {
   background: url(/wp-content/uploads/2020/02/Valentines-Box-Band-Icon.jpg);
   background-size: contain !important;
@@ -310,5 +304,51 @@ h3.addon-name {
   .addon-grids {
     grid-template-columns: repeat(2, 1fr) !important;
     width: 95%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .product-addon-gift-styling .form-row {
+    width: 100%;
+  }
+  .product-addon-gift-styling .form-row label {
+    width: 100%;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .product-addon-gift-styling .form-row label .addon-img {
+    width: auto;
+  }
+  .product-addon-gift-styling .form-row label .addon-img:before {
+    width: 65px !important;
+    height: 65px !important;
+    margin: 0 !important;
+  }
+  .addon-mobile-dropdown {
+    width: 100%;
+    position: relative;
+  }
+  .addon-mobile-dropdown .list {
+    width: 96.4%;
+    display: none;
+    padding: 0 15px;
+    margin-top: -10px;
+    max-height: 200px;
+    background: #fff;
+    position: absolute;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  .addon-mobile-dropdown.active .list {
+    display: block !important;
+  }
+  .mobile-dropdown-select {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+  }
+  .addon-mobile-dropdown.active input.addon.addon-radio {
+    display: none;
   }
 }
