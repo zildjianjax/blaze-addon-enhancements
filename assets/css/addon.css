@@ -60,6 +60,14 @@ form.cart .addon-preferred-styling h3.addon-name {
   background: url(/wp-content/uploads/2020/02/BABY-Box-Band-Icon.jpg);
   background-size: contain !important;
 }
+.product-addon-gift-styling .form-row:nth-of-type(6) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/06/get-well-soon.jpg);
+  background-size: contain !important;
+}
+.product-addon-gift-styling .form-row:nth-of-type(7) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/06/with-sympathy.jpg);
+  background-size: contain !important;
+}
 .addon-grids {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

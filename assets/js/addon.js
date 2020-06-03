@@ -339,6 +339,10 @@ jQuery(document).ready(function() {
   if(mobilecheck() ==1) {
     renderStyleDropdownForMobile();
   }
+  jQuery('.product-addon.product-addon-gift-styling .form-row').on('click', function() {
+    jQuery(this).closest('.product-addon.product-addon-gift-styling').find('.addon-checkbox').prop('checked', false);
+    jQuery(this).find('.addon-checkbox').prop('checked', true);
+});
 });
 function renderStyleDropdownForMobile() {
   var container = jQuery('<div class="addon-mobile-dropdown"></div>');
