@@ -1,0 +1,314 @@
+form.cart .product-addon {
+  display: none;
+  padding: 15px 0 15px 12px !important;
+}
+form.cart .addon-preferred-styling .product-addon {
+  display: flex !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+form.cart .addon-preferred-styling h3.addon-name {
+  display: none !important;
+}
+.product-addon-gift-styling label {
+  display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-addon-gift-styling .form-row {
+  width: 154px;
+}
+.product-addon-gift-styling .form-row input {
+      width: 15px;
+}
+.product-addon-gift-styling label .addon-img {
+  width: 100%;
+}
+.product-addon-gift-styling label .addon-img:before {
+  background: url(/wp-content/uploads/2020/01/original.jpg);
+    content: '';
+    width: 120px;
+    height: 100px;
+    background-size: contain !important;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.product-addon-gift-styling .form-row:nth-child(2) {
+  width: 135px !important;
+}
+/* Hide valentines styling temporarily */
+.product-addon-gift-styling .form-row:nth-of-type(2) {
+  display: none;
+}
+/* Hide easter styling temporarily */
+.product-addon-gift-styling .form-row:nth-of-type(3) {
+  display: none;
+}
+.product-addon-gift-styling .form-row:nth-of-type(2) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/02/Valentines-Box-Band-Icon.jpg);
+  background-size: contain !important;
+}
+.product-addon-gift-styling .form-row:nth-of-type(3) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/03/EASTER-2020-Box-Band-Icon.jpg);
+  background-size: contain !important;
+}
+.product-addon-gift-styling .form-row:nth-of-type(4) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/02/FOR-HER-Box-Band-Icon.jpg);
+  background-size: contain !important;
+}
+.product-addon-gift-styling .form-row:nth-of-type(5) label .addon-img:before {
+  background: url(/wp-content/uploads/2020/02/BABY-Box-Band-Icon.jpg);
+  background-size: contain !important;
+}
+.addon-grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.addon-grids-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.inner-img {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-image: url(/wp-content/uploads/2016/08/Boxed-Treats.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: overlay;
+}
+
+#btn-for-product-addon-champagne-sparkling-wine .inner-img {
+  background-image: url(../images/champagne.jpg);
+}
+/* #btn-for-product-addon-add-something-delicious-save-up-30 .inner-img {
+  background-image: url(../images/on\ sale.jpg);
+} */
+#btn-for-product-addon-wine .inner-img {
+  background-image: url(../images/wine.jpg);
+}
+#btn-for-product-addon-fresh-cheese-city-metro-areas-only .inner-img {
+  background-image: url(../images/gourmet.jpg);
+}
+#btn-for-product-addon-spirits-and-mixers .inner-img {
+  background-image: url(../images/sprits.jpg);
+}
+#btn-for-product-addon-pamper-item .inner-img {
+  background-image: url(../images/pamper.jpg);
+}
+#btn-for-product-addon-sweet-treats .inner-img {
+  background-image: url(../images/sweets.jpg);
+}
+#btn-for-product-addon-baby-item .inner-img {
+  background-image: url(../images/baby.jpg);
+}
+#btn-for-product-addon-hot-drinks .inner-img {
+  background-image: url(../images/tea.jpg);
+}
+#btn-for-product-addon-something-for-baby-save-up-to-30 .inner-img {
+  background-image: url(../images/on\ sale.jpg);
+}
+
+.addon-grids-item.active .inner-img {
+  background-color: #ca1237a3;
+}
+
+.addon-grids-item h4 {
+  font-size: 13px !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #f8f9f9;
+}
+
+.addon-alert {
+  display: none !important;
+}
+
+.woocommerce-page form .product-addon .container {
+  width: 100% !important;
+  padding: 0 !important;
+  height: 310px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+
+.qty-display {
+  text-align: center;
+}
+
+.product-addon .container > p.form-row {
+  /* grid-template-columns: 50px 1fr 50px 50px 50px !important; */
+  display: grid !important;
+  grid-template-columns: 1fr 50px 50px 90px !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 !important;
+  width: 100% !important;
+  grid-column-gap: 10px;
+}
+
+.woocommerce-page form .product-addon .container > p.form-row::before {
+  content: none !important;
+}
+
+.qty-addon-control {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.qty-addon-control .add,
+.qty-addon-control .minus {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff;
+  background: green; */
+  border-radius: 99px;
+  cursor: pointer;
+  background: url(../images/plus-circle.svg);
+  background-size: contain;
+}
+.qty-addon-control .minus {
+  background: url(../images/circle-minus.svg) !important;
+  background-size: contain !important;
+}
+
+.addon_add_items_button {
+  cursor: pointer;
+  margin-right: 15px !important;
+}
+
+.addon_add_items_button_wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.addon-list-view {
+  margin: 15px;
+}
+.addon-list-view p.list-addon-detail {
+  display: grid;
+  /* grid-template-columns: 50px 1fr 50px 50px 50px !important; */
+  width: 100% !important;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 50px 50px 50px !important;
+  justify-content: center;
+  align-items: center;
+}
+
+h3.addon-grid-title {
+  margin: 13px;
+  font-weight: bold;
+  font-weight: normal !important;
+  margin-top: 0;
+}
+
+h3.addon-grid-title.preferred-styling {
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+/* nav.woocommerce-breadcrumb + .product.type-product.product-type-simple {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 60% 40%;
+}
+
+.woocommerce div.product div.images, .woocommerce-page div.product div.images {
+  float: none;
+  width: 100%;
+  display: block;
+} */
+
+h3.addon-name {
+  margin: 5px 0 10px;
+}
+
+.addon-popup .product-addon .clear {
+  margin-bottom: 10px;
+}
+
+.addon-popup .product-addon .clear::before {
+  content: "Scroll for More";
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #a29061;
+}
+
+.button.addon_add_items_button,
+.button.addon_add_items_button:hover {
+  height: 15px !important;
+  padding: 11px 15px !important;
+  line-height: 0 !important;
+  font-size: 11px !important;
+}
+
+.button.addon_add_items_button.cancel:hover {
+  background: #ca1237 !important;
+}
+
+.button.addon_add_items_button.add:hover {
+  background: #77a464 !important;
+}
+
+.button.addon_add_items_button.add {
+  background: #77a464;
+}
+
+.button.addon_add_items_button.add::before {
+  border: 1px solid #77a464;
+}
+
+@media only screen and (max-width: 768px) {
+  .addon-grids {
+    grid-template-columns: repeat(3, 1fr) !important;
+    width: 95%;
+  }
+  .product-addon .container > p.form-row {
+    grid-template-columns: 1fr 50px 30px 75px !important;
+  }
+  .logo img {
+    max-width: 80% !important;
+  }
+  .header-aside {
+    padding: 15px 0 !important;
+  }
+  .upsells.products ul.products {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .upsells.products ul.products li:not(:last-of-type) {
+    margin-bottom: 10px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .addon-grids {
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 95%;
+  }
+}
